@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%;
+    --base-font: 'Mulish', sans-serif;
+
+      /* Colors */
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(283, 47%, 97%);
+    --title-color-base : hsl(320, 69%, 42%);
+    --text-color-base: hsl(244, 38%, 28%);
+    --gradient-background: linear-gradient(96.21deg, #343193 0%, #302c63 99.68%);
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: var(--base-font);
+    background: var(--light-gray);
+}
+
+img {
+    width: 100%;
+}
+
+/* Hero section */
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 3.4rem 9.3rem 3.2rem;
+    width: 100%;
+}
+
+#hero .hero-cta h1 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+    font-weight: 900;
+    color: var(--title-color-base);
+    margin: 1.7rem 0 0.5rem 0;
+}
+
+#hero .hero-cta p {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: var(--text-color-base);
+    margin-bottom: 3.4rem;
+}
+
+#hero .hero-cta .button-down {
+    width: 5.8rem;
+    height: 10.5rem;
+    display: flex;
+    margin: 0 auto;
+    transition: filter 300ms;
+}
+
+#hero .hero-cta .button-down:hover {
+    filter: brightness(0.7);
+}
+
+/* Cards section */
+
+#cards {
+    display: grid;
+    gap: 5rem;
+    background: var(--gradient-background);
+    padding: 5.2rem 3.8rem;
+    width: 100%;
+    height: 100%;
+}
+
+#cards .card {
+    background: var(--white);
+    border-radius: 2rem;
+    padding: 2.6rem;
+}
+
+#cards .card img {
+    width: 8rem;
+    height: 8rem;
+    margin-bottom: 3.2rem;
+}
+
+#cards .card .card-text {
+    width: 26.5rem;
+}
+
+#cards .card h3 {
+    font-size: 2.9rem;
+    line-height: 3.6rem;
+    font-weight: 900;
+    color: var(--title-color-base);
+    margin-bottom: 2rem;
+}
+
+#cards .card p {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: var(--text-color-base);
+}
+
+/* Contact section */
+
+#contact {
+    padding: 7.8rem 4rem 6.6rem;
+    width: 100%;
+    height: 100%;
+}
+
+/* Form */
+button,
+input,
+fieldset,
+textarea {
+  border: none;
+  background: none;
+  font-family: var(--base-font);
+}
+
+#contact form h2 {
+    color: var(--title-color-base);
+    font-weight: 900;
+    font-size: 3.2rem;
+    line-height: 4rem;
+    margin-bottom: 4.2rem;
+}
+
+#contact .input-wrapper {
+    margin-bottom: 2.4rem;
+}
+
+#contact form input {
+    padding: 1.2rem 1.6rem 1.2rem 4.4rem;
+    border: 0.15rem solid var(--text-color-base);
+    border-radius: 1.6rem;
+    width: 100%;
+}
+
+#contact form textarea {
+    padding: 1.2rem 1.6rem 1.2rem 1.4rem;
+    border: 0.15rem solid var(--text-color-base);
+    border-radius: 1.6rem;
+    width: 100%;
+}
+
+#contact form textarea {
+    height: 12.6rem;
+}
+
+#contact form input::placeholder,
+#contact form textarea::placeholder {
+  color: var(--text-color-base);
+  font-weight: 600;
+  font-size: 1.6rem;
+  opacity: 1;
+}
+
+#name {
+    background: url(./assets/person.svg) no-repeat scroll 1.4rem 0.8rem;
+}
+  
+  #email {
+    background: url(./assets/email.svg) no-repeat scroll 1.4rem 0.8rem;
+}
+
+#contact form button {
+    background: var(--gradient-background);
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    padding: 1rem 1.6rem;
+    border-radius: 1.6rem;
+    cursor: pointer;
+    transition: filter 200ms;
+}
+  
+#contact form button:hover {
+    filter: brightness(0.9);
+}
+
+/* Footer */
+
+footer {
+    background: var(--gradient-background);
+  
+    padding: 3.2rem 1.6rem;
+}
+  
+footer p {
+    color: var(--white);
+    font-size: 1.9rem;
+    line-height: 2.4rem;
+    font-weight: 600;
+    text-align: center;
+}
+  
+@media (min-width: 1440px) {
+
+    /* Hero section */
+    #hero{
+        flex-direction: row-reverse;
+        padding: 0 3rem 10.4rem 10.9rem;
+        justify-content: space-between;
+        max-height: 83.6rem;
+    }
+
+    #hero .hero-cta {
+        margin-top: 31.2rem;
+    }
+
+    #hero .hero-cta h1 {
+        font-size: 5.8rem;
+        line-height: 7.3rem;
+        margin: 0 0 0.8rem;
+      }
+
+    #hero .hero-cta p {
+        font-size: 3.2rem;
+        line-height: 4rem;
+        margin-bottom: 17.9rem;
+    }
+
+    #hero .hero-cta .button-down {
+        margin: 0;
+    }
+
+    #hero img {
+        object-fit: cover;
+    }
+
+    /* Cards section */
+    #cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6rem;
+        padding: 6.4rem 11.0rem 8rem;
+    }
+
+    #cards .card{
+        border-radius: 2.4rem;
+        padding: 3.2rem;
+    }
+
+    #cards .card img {
+        width: 9.7rem;
+        height: 9.7rem;
+        margin-bottom: 4rem;
+    }
+    
+    #cards .card .card-text {
+        width: 100%;
+    }
+    
+    #cards .card h3 {
+        font-size: 3.5rem;
+        line-height: 4.4rem;
+        font-weight: 900;
+        color: var(--title-color-base);
+        margin-bottom: 2.4rem;
+    }
+    
+    #cards .card p {
+        font-weight: 600;
+        font-size: 1.9rem;
+        line-height: 2.4rem;
+        color: var(--text-color-base);
+    }
+
+    /* Contact section */
+    #contact {
+        display: flex;
+        align-items: center;
+        gap: 9.2rem;
+        padding: 0;
+        height: 62.2rem;
+        margin: 0 auto;
+        background: url(./assets/stars.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+    
+    #contact form {
+        flex: 1;
+        margin-left: 10.9rem;
+      }
+    
+    #contact form h2 {
+        color: var(--title-color-base);
+        font-weight: 900;
+        font-size: 4.2rem;
+        line-height: 5.3rem;
+        margin-bottom: 3rem;
+    }
+    
+    #contact form textarea {
+        flex: 1;
+    }
+
+    #contact form button {
+        height: 4.5rem;
+    }
+
+    #contact .stars {
+        flex: 1;
+    }
+}
